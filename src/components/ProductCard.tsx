@@ -11,7 +11,7 @@ interface ProductCardProps {
 export default function ProductCard({product}: ProductCardProps){
     const isNew = Date.now()- new Date(product.createdAt).getTime( ) < 1000 *60 *60*24 *7
 return(
-   <Link href = {`/product/${product.id}`} className="card w-full bg-base-100 hover:shadow-x1 transition-shadow">
+   <Link href = {`/products/${product.id}`} className="card w-full bg-base-100 hover:shadow-x1 transition-shadow">
     <figure>
     <Image alt={product.name} className=" object-center h-48" width={800} height={400}  src={product.imageUrl}/>
     </figure>
