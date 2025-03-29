@@ -13,6 +13,7 @@ const description = formData.get("description")?.toString();
 const imageUrl = formData.get('imageUrl')?.toString();
 const price = Number(formData.get("price") || 0);
 
+
 if(!name || !description || !imageUrl || !price){
    throw Error("Missing required fields") 
 }
