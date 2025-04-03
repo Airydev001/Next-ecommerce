@@ -4,6 +4,7 @@ import "./globals.css";
 import "./app.css";
 import Navbar from "./Navbar/Navbar";
 import Footer from "./Footer"
+import SessionProvider from "./SessionProvider"
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -29,9 +30,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <SessionProvider>
         <Navbar/>
         <main className="p-4 max-w-7xl m-auto min-w-[300px]"> {children}</main>
        <Footer/>
+       </SessionProvider>
       </body>
     </html>
   );

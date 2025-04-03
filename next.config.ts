@@ -7,6 +7,9 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "**.unsplash.com",
       },
+      {
+        hostname: "lh3.googleusercontent.com"
+      }
     ],
   },
   experimental: {
