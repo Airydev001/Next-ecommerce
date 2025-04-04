@@ -22,13 +22,7 @@ if(!name || !description || !imageUrl || !price){
 }
 //remeber to remove this is add product automatically.
 //remove it later
-for (let i = 0; i < 50; i++){
-    await prisma.product.create({
-        data:{
-    name,description,imageUrl,price
-        },
-    });
-}
+
 
 
 redirect("/")
